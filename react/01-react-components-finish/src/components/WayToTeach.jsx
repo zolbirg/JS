@@ -1,13 +1,14 @@
-export default function WayToTeach({ title, description }) {
-  function handleClick() {
-    localStorage.setItem('auth-time', new Date())
-  }
 
-  return (
-    <li onClick={handleClick}>
-      <p>
-        <strong>{title}</strong> {description}
-      </p>
-    </li>
-  )
-}
+
+// function WayToTaech({props}) {
+  export default function WayToTaech({ title, description }) {
+        return (
+          <li>
+            <p>
+              <strong>{title}</strong>
+              {/* {props.description} */}
+              {description}
+            </p>
+          </li>
+        );
+      }
